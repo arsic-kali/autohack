@@ -14,11 +14,11 @@ To install and use autohack:
 
 **It is reccommended you run this tool as root. If you type `sudo ./autohack` this will result in a bug. Instead switch to your root user first. You can read more on the bug below and why autohack behaves this way.**
 
-Hope everyone enjoys the concept of this project. I plan to see how many people like and enjoy the script and I plan to develop it everyday and add new functionality. Please report any and all bugs/issues/ideas to the [Discussions](https://github.com/dxrk-kali/autohack/discussions) / [Issues](https://github.com/dxrk-kali/autohack/issues) board.
+Hope everyone enjoys the concept of this project. I plan to see how many people like and enjoy the script and I plan to develop it everyday and add new functionality. Please report any and all bugs/issues/ideas to the [Discussions](https://github.com/dxrk-kali/autohack/discussions) / [Issues](https://github.com/arsic-kali/autohack/issues) board.
 
 Hack on!
 
-- dxrk
+- arsic
 
 ## Disclaimers
 
