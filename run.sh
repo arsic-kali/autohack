@@ -13,6 +13,8 @@ then
 	exit 1;
 fi
 
+# Fixed Run.sh to be simpler and more efficient 04/08/25
+
 #shell=`echo $SHELL | awk -F '/' '{print $(NF)}'`
 #shtype=`echo .${shell}rc` 
 #echo PATH=$(pwd):$PATH >> ~/$shtype
