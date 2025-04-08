@@ -13,6 +13,7 @@ YLLW='\033[1;33m'
 DG='\033[0;37m'
 LR='\033[0;31m'
 patch=5.01
+whereah=`readlink -f /usr/local/bin/autohack`; 
 #END COLORS
 ############################################  CLI CODE SECTION ##########################
 
@@ -28,119 +29,121 @@ fi
 	
 ##########################################  CLI CODE END ###############################
 nmapipscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./nmapipscan
 	cd ../..
 }
 nmapudpscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./nmapudpscan
 	cd ../..
 }
+
+#Try fixing this first
 niktowebscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8};cd scripts/scanning_enumeration
 	./niktowebscan
 	cd ../..
 }
 netscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./netscan
 	cd ../..
 }
 sniffer(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./sniffer
 	cd ../..
 }
 wifiscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./wifiscan
 	cd ../..
 }
 managedmode(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./managedmode
 	cd ../..
 }
 usrmsg(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	./usrmsg
 	cd ../..
 }
 update(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	./update
 	cd ../..
 }
 updater(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	./updater
 	cd ../..
 }
 arpscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./arpscan
 	cd ../..
 }
 
 credits(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	./credits_msg
 	cd ../..
 }
 kaliupgrade_update(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	./kaliupgrade_update
 	cd ../..
 }
 searchsploit(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./searchsploit
 	cd ../..
 }
 smbclient(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation
+	cd ${whereah::-8}; cd scripts/exploitation
 	./smbclient
 	cd ../..
 }
 gobuster(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./gobuster
 	cd ../..
 }
 deauth(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation
+	cd ${whereah::-8}; cd scripts/exploitation
 	./deauth
 	cd ../..
 }
 massdeauth(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation
+	cd ${whereah::-8}; cd scripts/exploitation
 	./massdeauth
 	cd ../..
 
 }
 monitormode(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./monitormode
 	cd ../..
 }
 macspoof(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/anonymity
+	cd ${whereah::-8}; cd scripts/anonymity
 	./macspoof
 	cd ../..
 }
 smbsigning(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./smbsigning
 	cd ../..
 }
 autorecon(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./autorecon
 	cd ../..
 }
 wpscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./wpscan
 	cd ../..
 	printf "Enter Target URL ---> "
@@ -157,41 +160,41 @@ wpscan(){
 	fi
 }
 masscan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./masscan
 	cd ../..
 }
 dependencies_installer(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	gnome-terminal -- $SHELL -c "./dependencyChecker.sh;./gitInstall.sh; exec bash"	
 }
 scouter(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./scouter
 	cd ../..
 }
 ferox(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	./ferox
 	cd ../..
 }
 portforward(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/wifi_tools
+	cd ${whereah::-8}; cd scripts/wifi_tools
 	./portforward
 	cd ../..
 }
 scillaDirEnum(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	gnome-terminal --command="bash -c './scillaDir; $SHELL'"
 	cd ../..
 }
 scillaPortScanner(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	gnome-terminal --command="bash -c './scillaPortScan; $SHELL'"
 	cd ../..
 }
 allInOnePortScanner(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	gnome-terminal --command="bash -c './autohackHeader; ./masscan; $SHELL'"
 	sleep 1
 	gnome-terminal --command="bash -c './autohackHeader;./nmapudpscan; $SHELL'"
@@ -202,7 +205,7 @@ allInOnePortScanner(){
 	cd ../..
 }
 allInOneWebScanner(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration
+	cd ${whereah::-8}; cd scripts/scanning_enumeration
 	gnome-terminal --command="bash -c './autohackHeader;./niktowebscan; $SHELL'"
 	sleep 1
 	gnome-terminal --command="bash -c './autohackHeader;./gobuster; $SHELL'"
@@ -214,90 +217,90 @@ allInOneWebScanner(){
 	gnome-terminal --command="bash -c './autohackHeader;./ffufFuzz; $SHELL'"
 }
 SET(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation
+	cd ${whereah::-8}; cd scripts/exploitation
 	./SET
 	cd ../..
 }
 reverseShellGen(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation
+	cd ${whereah::-8}; cd scripts/exploitation
 	gnome-terminal --command="bash -c './autohackHeader;./reverseShellGen; $SHELL'"
 	cd ../..
 }
 xsstrike(){
 	
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./xsstrikeTarget; $SHELL'"
 }
 ffufScanner(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufFuzz; $SHELL'"
 }
 ffufExtScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufExtScan; $SHELL'"
 }
 ffufFileExtScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufFileExtScan; $SHELL'"
 }
 ffufSubScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufSubScan; $SHELL'"
 }
 ffufVhostScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufVhostScan; $SHELL'"
 }
 ffufRecursiveScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufRecursiveScan; $SHELL'"
 }
 ffufPostScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufPost; $SHELL'"
 }
 ffufGetScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufGet; $SHELL'"
 }
 ffufValueScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal --command="bash -c './autohackHeader;./ffufValueScan; $SHELL'"
 }
 cmeSMBgui(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal -- bash -c "./autohackHeader;./cmeSMB; exec bash"
 }
 enum4linuxSMB(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal -- bash -c "./autohackHeader;./enum4linuxSMB; exec bash"
 }
 sqliBurp(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal -- bash -c "./autohackHeader;./sqliBurp; exec bash"
 }
 dirb(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal -- bash -c "./autohackHeader;./dirb; exec bash"
 }
 nameThatHash(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation/
+	cd ${whereah::-8}; cd scripts/exploitation/
 	gnome-terminal -- bash -c "./autohackHeader;./nameThatHash; exec bash"
 }
 hashcatFunc(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation/
+	cd ${whereah::-8}; cd scripts/exploitation/
 	gnome-terminal -- bash -c "./autohackHeader;./hashcat; exec bash"
 }
 JTR(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/exploitation/
+	cd ${whereah::-8}; cd scripts/exploitation/
 	gnome-terminal -- bash -c "./autohackHeader;./johnScript; exec bash"
 }
 phpServer(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other/
+	cd ${whereah::-8}; cd scripts/other/
 	gnome-terminal -- bash -c "./autohackHeader; ./phpServer"
 }
 cveScan(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/scanning_enumeration/
+	cd ${whereah::-8}; cd scripts/scanning_enumeration/
 	gnome-terminal -- bash -c "./autohackHeader; ./cveScan"
 }
 autohackHeader(){

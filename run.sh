@@ -12,8 +12,15 @@ then
 	printf "Needs to be run as root/sudo user.\n"
 	exit 1;
 fi
-shell=`echo $SHELL | awk -F '/' '{print $(NF)}'`
-shtype=`echo .${shell}rc` 
-echo PATH=$(pwd):$PATH >> ~/$shtype
-echo "alias ah='autohack'" >> ~/$shtype
-echo "Close this terminal session and open up a new one, make sure to swap to your root user and then you can run autohack by typing ah into the terminal. Enjoy!"
+
+#shell=`echo $SHELL | awk -F '/' '{print $(NF)}'`
+#shtype=`echo .${shell}rc` 
+#echo PATH=$(pwd):$PATH >> ~/$shtype
+#echo "alias ah='autohack'" >> ~/$shtype
+printf "${GREEN}[+] Copying autohack binary to /usr/local/bin/autohack and /usr/local/bin/ah for ease of use :)\n${NC}"
+#cp ./autohack /usr/local/bin/autohack
+#cp ./autohack /usr/local/bin/ah
+sudo ln -s "$(pwd)/autohack" /usr/local/bin/autohack
+sudo ln -s "$(pwd)/autohack" /usr/local/bin/ah
+printf "${GREEN}[*] Done\n${NC}"
+#echo "Close this terminal session and open up a new one, make sure to swap to your root user and then you can run autohack by typing ah into the terminal. Enjoy!"

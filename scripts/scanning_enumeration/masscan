@@ -10,5 +10,7 @@ patch=4.84
 #END COLORS
 printf "${YLLW}Enter Target IP Address/Subnet ---> "
 read targip
-gnome-terminal --command="bash -c 'masscan $targip --ports 0-65535; $SHELL'"
+printf "${YLLW}Enter Your IP ---> "
+read lhost
+gnome-terminal --command="bash -c 'masscan $targip --ports 0-65535 --adapter-ip $lhost; $SHELL'"
 exit

@@ -10,7 +10,7 @@ LR='\033[0;31m'
 
 ./autohackHeader
 #find where autohack is installed
-whereah=`which autohack`; cd ${whereah::-8};
+whereah=`readlink -f /usr/local/bin/autohack`; 
 
 #install scilla
 #check if scilla is already installed
@@ -19,16 +19,15 @@ cd ${whereah::-8}scripts/scanning_enumeration/scilla && make linux;sleep 2;
 
 #install autorecon
 printf "\n\n\n${GREEN}[*] About to install autorecon ... [*]${NC}\n"
-cd ${whereah::-8}scripts/scanning_enumeration/AutoRecon && python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git;sleep 2;
+apt install autorecon;sleep 2;
 
 #install name-that-hash
 printf "\n\n\n${GREEN}[*] About to install name-that-hash ... [*]${NC}\n"
-pip3 install name-that-hash;sleep 2;
+apt install name-that-hash;sleep 2;
 
 #install SET
 printf "\n\n\n${GREEN}[*] About to install Social Engineers Toolkit ... [*]${NC}\n"
-cd ${whereah::-8}scripts/exploitation/social-engineer-toolkit && pip3 install -r requirements.txt && python3 setup.py;sleep 2
-
+apt install set;
 
 
 
