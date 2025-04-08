@@ -18,7 +18,7 @@ whereah=`readlink -f /usr/local/bin/autohack`;
 ############################################  CLI CODE SECTION ##########################
 
 argscanner(){
-	whereah=`which autohack`; cd ${whereah::-8}; cd scripts/other
+	cd ${whereah::-8}; cd scripts/other
 	./argScanner $@
 	cd ../..
 }
